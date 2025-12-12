@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Ticker Widget</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .tradingview-widget-container {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "proName": "OANDA:XAUUSD",
+      "title": "Gold"
+    },
+    {
+      "proName": "BINANCE:SOLUSDT",
+      "title": "Solana"
+    },
+    {
+      "proName": "BINANCE:XRPUSDT",
+      "title": "XRP"
+    },
+    {
+      "proName": "BINANCE:ZECUSDT",
+      "title": "ZEC"
+    }
+  ],
+  "colorTheme": "light",
+  "locale": "en",
+  "isTransparent": false,
+  "showSymbolLogo": true,
+  "displayMode": "adaptive",
+  "largeChartUrl": ""
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+</body>
+</html>
